@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  color: aliceblue;
+}
+.nav-list {
+  width: 74%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 8px;
+  font-size: 15px;
+}
+.nav-list a:hover {
+  color: green;
+  background-color: azure;
+  border-radius: 12px;
+}
+.nav-list li {
+  list-style: none;
+  padding-left: 12px;
+}
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding-left: 5px;
+  font-family: sans-serif;
+}
+.logo img {
+  width: 60px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.right-nav {
+  /* background-color: blue; */
+  width: 50%;
+  text-align: right;
+  padding: 0px 23px;
+  /* display: flex; */
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 8px;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line {
+  width: 33px;
+  background-color: aliceblue;
+  height: 3px;
+  margin: 5px 3px;
+}
+.btn {
+  padding: 7px 21px;
+  margin: 5px 2px;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(249, 250, 252);
+}
+.btn-sm {
+  padding: 5px 10px;
+  vertical-align: middle;
+  color: white;
+}
+.btn:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.btn-sm:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.slider {
+  margin-top: 2px;
+  height: 70vh;
+  width: 100%;
+}
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img{
+    height: 400px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .products{
+    margin-top: 2px;
+    height: 215vh;
+    width: 100%;
+    /* background-color: bisque; */
+  }
+  .products-2{
+    margin-top: 10px;
+    height: 80vh;
+    width: 100%;
+    /* background-color: bisque; */
+  }
+  .products-3{
+    margin-top: 10px;
+    height: 80vh;
+    width: 100%;
+    /* background-color: bisque; */
+  }
+  .products-2 h2{text-align: center;padding: 15px 0px;font-family: sans-serif;}
+  .products-3 h2{text-align: center;padding: 15px 0px;font-family: sans-serif;}
+  .card-items{
+    max-width: 1150px;
+    /* border: 2px solid; */
+    margin: auto;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cards{
+    border: 2px solid white;
+    width: 300px;
+    margin: 10px 14px;
+    height: 420px;
+    box-shadow: 3px 3px 15px grey;
+    background-color: aliceblue;
+    position: relative;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    z-index: 1;
+    
+  }
+  .cards img{
+    width: 270px;
+    margin:3px 15px;
+    height: 249px;
+  }
+  .cards img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 12px;
+  }
+  .cards:hover{
+    transform: scale(1.1);
+  }
+  .text-big{
+    margin: 8px 2px;
+  }
+  .btn-p a{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    padding: 5px 10px;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid green;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  .btn-s{
+    position: absolute;
+    right: 100px;
+    bottom: 15px;
+    margin: 0px 12px;
+    padding: 5px 10px;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid green;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  
+  .btn-p a:hover{
+    color:black;
+    background-color: yellow;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .btn-s:hover{
+    color:black;
+    background-color: yellow;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  .products h2{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: sans-serif;
+  }
+  .ba{
+    color: yellow;
+  }
+
+
+  @media screen and (max-width: 1277px) {
+    .nav-list {
+      flex-direction: column;
+    }
+    .nav-list li {
+      margin: 12px;
+    }
+    .right-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 17%;
+    }
+    .navbar {
+      flex-direction: column;
+      width: 100%;
+      height: 323px;
+      transition: all 0.5s ease-in-out;
+    }
+    .burger {
+        display: block;
+      }
+      .h-nav-resp {
+        height: 72px;
+      }
+      .v-class-resp {
+        opacity: 0;
+      }
+      
+}

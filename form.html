@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order now</title>
+    <link rel="stylesheet" href="/css/order.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+</head>
+
+<body>
+
+
+    <div class="forms">
+
+        <form action="#" onsubmit="mysc(e)">
+            <div class="container">
+                <h1>Order Now!</h1><br>
+                <div class="form-group">
+                    <label for="userfname">First Name:</label>
+                    <input type="text" name="userfname" id="userfname">
+                </div>
+                <div class="form-group">
+                    <label for="userlname">Last Name:</label>
+                    <input type="text" name="userlname" id="userlname"><br>
+                </div>
+                <div class="form-group">
+                    <label for="mob">Mob:</label>
+                    <input type="number" name="mob" id="mob">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="address">Billing Address:</label>
+                    <textarea name="" id="address" cols="10" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pay">Select Payment Method</label>
+                    <select name="" id="pay">
+                        <option value="Paytm">Paytm</option>
+                        <option value="Credit-card">Credit-card</option>
+                        <option value="Google-wallet">Google-wallet</option>
+                        <option value="Debit-card">Debit-card</option>
+                        <option value="Debit-card">Cash on Delivery</option>
+                    </select>
+                </div>
+                <div class="form-groups">
+                    <label for="pin">Pincode:</label>
+                    <input type="number" name="pin" id="pin">
+                </div>
+                <div class="form-group">
+                    <label for="select">Show your Availability</label>
+                    <input type="radio" name="select" id="select">Sun/Sat <br><input type="radio" name="select"
+                        id="select">Working Place <br><input type="radio" name="select" id="select">All the Day
+                </div>
+
+                <button type="submit" class="btn" onclick="message()"><a href="/product.html">BUY NOW</a></button>
+            </div>
+
+
+        </form>
+
+        <script>
+            function message() {
+                alert("Thank you for placing an order. We will contact you soon.");
+                let but = document.getElementsByClassName('btn')
+                but.style.display = "none"
+            }
+            
+            
+        </script>
+
+
+    </div>
+
+</body>
+
+</html>

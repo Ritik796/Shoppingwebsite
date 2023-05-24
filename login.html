@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                               
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        :root{
+            --neon-color:#A5F1E9;
+            --white-color:#fff;
+            --main-bacco:#051527;
+            --light-bacco:#0A2647;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: black;
+            /* border: 2px solid white; */
+            /* background: url(/img/bg.jpg)no-repeat center center/cover; */
+        }
+        .wrapper{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 550px;
+            background: transparent;
+            border: 4px solid var(--light-bacco);
+            border-radius: 15px;
+            transition: 0.5s;
+            box-shadow: 0 15px 20px grey;
+        }
+        .wrapper:hover{
+            border: 4px solid #366999;
+            box-shadow: 0 0 20px #1fdb38;
+           
+        }
+        h2{
+            font-size: 2rem;
+            text-align: center;
+            color:black;
+            transition: 0.5s;
+        }
+        .wrapper:hover h2{
+            color: #ca6d2f;
+        }
+        .input-box{
+            position: relative;
+            width: 320px;
+            margin: 30px 0px;
+        }
+        .input-box input{
+            width: 100%;
+            height: 50px;
+            border-radius: 7px;
+            background: transparent;
+            border: 2px solid var(--light-bacco);
+            outline: none;
+            font-size: 1em;
+            color:black;
+            padding: 0 10px 0 35px;
+            transition: 0.5s;
+        }
+        .wrapper:hover .input-box input{
+            border: 2px solid #FFFF00;
+            box-shadow:  0 0 10px #FFFF00, inset 0 0 10px #FFFF00;
+            
+        }
+        .input-box input::placeholder{
+            color: black;
+        }
+        input [type="text"]{
+            background-color: black;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            border-radius: 7px;
+            background-color: #1d7be6;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button:hover{
+            border: 2px solid red;
+            box-shadow: 0 0 20px red,inset  0 0 20px red;
+            color: #FFFF00;
+            background-color:black;
+        }
+        .forget-password a{
+            color: #000;
+            padding: 10px;
+            
+            
+        }
+        .registration-link p{
+            color: black;
+        }
+        .registration-link p a{
+            color: blue;
+            text-shadow:  1px 1px 2px dodgerblue
+        }
+        
+        /* @media screen and (max-width:1000px) {
+            .wrapper{
+                width: 100%;
+                
+            }
+            
+        } */
+        .icon{
+            position: absolute;
+            top: 35%;
+            left: 13px;
+            color: blue;
+        }
+        button a{
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" onsubmit="myfun(event)">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon class="fa fa-user"></ion-icon>
+                </span>
+                <input type="text" name="" id="username" placeholder="username" required>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon class="fa fa-key"></ion-icon></span>
+                <input type="password" name="" id="password" placeholder="enter your password" required>
+            </div>
+            <div class="forget-password">
+                <a href="#">Forget Password</a>
+            </div>
+            <button type="submit"><a href="#">Login</a></button>
+            <div class="registration-link">
+                <p>Don't Have an account? <a href="/register.html"> Sign up</a></p>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function myfun(event) {
+            event.preventDefault();
+            var x = document.getElementById("username").value;
+            var y = document.getElementById("password").value;
+
+            localStorage.setItem("Username is",x)
+            localStorage.setItem("Password is",y)
+
+
+
+        }
+    </script>
+</body>
+</html>
